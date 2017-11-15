@@ -42,7 +42,13 @@ print("Winner: " + str(max_candidate))
 print("----------------------")
 
 
+#Output to txt file 
+#in terminal use:
+#python main.py > pypoll.txt 
 
+import subprocess
+with open("pypoll.txt", "w+") as output:
+    subprocess.call(["python", "./main.py"], stdout=output);
 
 
 

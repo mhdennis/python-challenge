@@ -40,7 +40,13 @@ print("Greatest Decrease in Revenue: "
 	+str(min_date) + " ($" + str(min_value)+")")
 
 
+#Output to txt file 
+#in terminal use:
+#python main.py > pybank.txt 
 
+import subprocess
+with open("pybank.txt", "w+") as output:
+    subprocess.call(["python", "./main.py"], stdout=output);
 
 
 
